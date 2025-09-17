@@ -10,6 +10,7 @@ b. The limits in Extension 2 above"""
 # Imports libraries
 import random
 import string
+import os
 
 # Random password generator
 def PasswordGen():
@@ -42,7 +43,7 @@ def PasswordCheck(password, input_password):
         return True
     else:
         return False
-    
+
 # Gets the user to enter a password
 def MainLoop():
     password = GetPassword() # Sets the correct password
@@ -59,9 +60,9 @@ def MainLoop():
         else:
             print("Correct\n")
     # Opens and displays the content of the file
-    print("This is the contents of the file:\n")
-    file = open("info.txt",)
-    print(file.read())
+    #print("This is the contents of the file:\n")
+    os.startfile("info.txt")
+    #print(file.read())
 
 # Runs program
 MainLoop()
